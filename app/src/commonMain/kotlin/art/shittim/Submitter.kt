@@ -22,7 +22,7 @@ val client = OkHttpClient()
 
 fun submit(request: RequestArticleLine, token: String) {
     val request = Request.Builder()
-        .url("https://classics.shitttim.art/line/append")
+        .url("https://classics.shittim.art/line/append")
         .post(Json.encodeToString(request).toRequestBody("application/json".toMediaTypeOrNull()))
         .header("Authorization", "Bearer $token")
         .build()
